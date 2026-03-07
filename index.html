@@ -30,7 +30,7 @@ text-align:center;
 }
 
 #weather{
-font-size:20px;
+font-size:19px;
 font-weight:bold;
 text-shadow:0 0 10px rgba(0,0,0,0.8);
 }
@@ -50,7 +50,7 @@ text-shadow:0 0 10px rgba(0,0,0,0.8);
 function getWeatherDescription(code){
 
 if(code === 0) return "☀️ Sonnig";
-if(code === 1 || code === 2) return "🌤 Leicht bewölkt";
+if(code === 1 || code === 2) return "🌤 Bewölkt";
 if(code === 3) return "☁️ Bewölkt";
 
 if(code === 45 || code === 48) return "🌫 Nebel";
@@ -59,7 +59,7 @@ if(code >= 51 && code <= 67) return "🌧 Regen";
 
 if(code >= 71 && code <= 77) return "❄️ Schnee";
 
-if(code >= 80 && code <= 82) return "🌧 Regenschauer";
+if(code >= 80 && code <= 82) return "🌧 Regen";
 
 if(code >= 95) return "⛈ Gewitter";
 
@@ -98,3 +98,4 @@ setInterval(loadWeather,600000);
 
 </body>
 </html>
+
